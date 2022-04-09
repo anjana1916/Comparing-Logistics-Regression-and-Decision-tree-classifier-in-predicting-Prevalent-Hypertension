@@ -68,11 +68,20 @@ We use Gini entropy as the loss function, as it allows to measure the variance a
 classes. Here again we use the same split as the previous model for the same reason. In addition to 
 that I have used GridSearchCV to tune the hyperparameters. So that it gives a combination of 
 hyperparameters for which the model performs the best.  
+![dt](https://user-images.githubusercontent.com/103304121/162564293-a62c0350-7181-4d42-aede-538046ac201f.png)
+
 
 ### Results and Conclusion
 Both models perform quite well when we take a look at the accuracies and errors. The training 
 accuracies differ by 0.001 but the validation accuracies are the same.  
 ![deci](https://user-images.githubusercontent.com/103304121/162564214-227b2bcb-3d1b-462a-9ce6-032da5c99f44.png)
-![logist](https://user-images.githubusercontent.com/103304121/162564215-667918e1-2e27-462e-bbb1-e24fa87dd678.png)
+![logist](https://user-images.githubusercontent.com/103304121/162564215-667918e1-2e27-462e-bbb1-e24fa87dd678.png)  
+
+The training and validation accuracies for logistic regression are 0.9949 and 0.9911 respectively and logistic loss for the same are 0.174 and 0.305 respectively. 
+The training and validation accuracies for Decision tree classifier are 1.0 and 0.9911 respectively.  
+Based on the result, it seems that the Decision tree classifier is a little overfit, this happened since we used GridSearchCV. Overfitting is one of the major disadvantages of GridSearch as it tunes the hyperparameters based on the training data. Logistic regression seems to perform quite well. But one thing I noticed while going through the data is that it has a highly uneven class distribution(see histogram last plot). This results in false positive paradox. I would consider collecting data with an even class distribution and then apply both the models and interpret the results.  
+The test set construction is explained above and is 20% of the dataset. The test error for Logistic regression is 0.005 and for Decision Tree classifier is 0.0166. Even though the test error for logistic regression is much lower than the decision tree classifier, I would choose the later as they are capable of representing highly non-linear functions and can perfectly separate data points according to their labels. For logistic regression the only possible decision boundary is a straight line as it consists of linear functions.  
+This report can be extended by using a good dataset with even class distribution. For the most part Decision tree classifier seems like a good model in terms of interpretability, calculation and results. GridSearchCV is quite useful for tuning the hyperparameters and it is better to apply it on a validation set.
+
 
 
