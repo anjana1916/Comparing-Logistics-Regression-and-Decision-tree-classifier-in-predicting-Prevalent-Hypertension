@@ -39,5 +39,6 @@ the important features, I made use of the correlation chart with the help of sea
 bloodpressure and diastolic blood pressure are highly correlated to each other. None of the features 
 were correlated to the label, Prevalent stroke. Therefore I chose the features based on domain 
 knowledge[4], mostly focusing on medical records and unhealthy habits( that is considering Blood 
-pressure, BMI, Cigs Per Day and glucose level).
+pressure, BMI, Cigs Per Day and glucose level).  
+
 ![dow](https://user-images.githubusercontent.com/103304121/162563561-ecccbff7-b536-4a54-a184-2d83fb565153.png)
