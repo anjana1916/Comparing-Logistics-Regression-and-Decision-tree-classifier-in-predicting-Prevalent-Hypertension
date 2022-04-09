@@ -1,25 +1,28 @@
-# Prediction-of-Coronary-Heart-Disease
-### Source:
-This data is taken from Kaggle website, it is based on an ongoing cardiovascular study on residents of the town of Framingham, Massachusetts. There are two classes – patients having ten year risk of future coronary heart disease (CHD) and the patients not having ten year risk of future CHD. The dataset provides the patient’s medical history. It includes over 4,000 records and 16 attributes.
-### Attributes:
+# **Comparing Logistic Regression and Decision tree classifier in Predicting Prevalent Hypertension**
+### Introduction
+Hypertension is associated with high blood pressure. Generally, as an adult, you are considered to 
+have high blood pressure if your systolic pressure reading is greater than or equal to 140 mm Hg or if 
+your diastolic pressure is greater than or equal to 90 mm Hg. Early onset of hypertension can 
+cause many cardiovascular diseases and organ degradation. There are many factors which can lead to 
+an early onset of hypertension – like smoking, unhealthy eating habits..etc. In this report, our main 
+aim is to predict hypertension in patients based on their medical records, demographic and
+behavioural aspects using Logistic regression and Decision tree classifier and compare the results.
+### Problem Formulation
+I have chosen the dataset from Kaggle website. The dataset consists of 4000 data points. Each data 
+point is a patient – his medical records + behaviours. There are 8 features, all are numeric(integers 
+and float numbers): 
 #### Demographic:
-• Sex: male or female  
 • Age: Age of the patient
-#### Behavioral
-• Current Smoker: whether or not the patient is a current smoker  
+#### Behavioural:
 • Cigs Per Day: the number of cigarettes that the person smoked on average in one day. 
-#### Medical( history)
-• BP Meds: whether or not the patient was on blood pressure medication  
-• Prevalent Stroke: whether or not the patient had previously had a stroke  
-• Prevalent Hyp: whether or not the patient was hypertensive  
-• Diabetes: whether or not the patient had diabetes
-#### Medical(current)
-• Tot Chol: total cholesterol level  
-• Sys BP: systolic blood pressure  
-• Dia BP: diastolic blood pressure  
-• BMI: Body Mass Index  
-• Heart Rate: heart rate  
+#### Medical records:
+• Tot Chol: total cholesterol level   
+• Sys BP: systolic blood pressure   
+• Dia BP: diastolic blood pressure   
+• BMI: Body Mass Index   
+• Heart Rate: heart rate   
 • Glucose: glucose level  
-#### Predict variable (desired target)
-• 10 year risk of coronary heart disease CHD 
-
+The label : prevalent hypertension or not (0 or 1). It is a nominal variable(binary)  
+Behavioural aspects like the number of cigarettes smoked significantly contributes to our objective or 
+label, as smoking is one main cause of hypertension. Majority of the patients are from age group 35-
+55 that is about 67%, and 31% above 55, whereas only 2% below 35
