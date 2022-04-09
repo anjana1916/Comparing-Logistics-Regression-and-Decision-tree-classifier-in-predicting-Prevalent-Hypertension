@@ -29,4 +29,14 @@ Behavioural aspects like the number of cigarettes smoked significantly contribut
 label, as smoking is one main cause of hypertension. Majority of the patients are from age group 35-
 55 that is about 67%, and 31% above 55, whereas only 2% below 35. Factors like unhealthy eating habits will be reflected on the medical records mainly – cholesterol, 
 BMI and glucose level. Our objective is to create a model using the above mentioned features to 
-predict the possibility of hypertension.
+predict the possibility of hypertension.  
+
+### Methods
+Initially, exploratory data analysis was carried out. There were quite a few missing values in 4 
+features (458 missing totally), which were substituted with the average of that feature. For selecting 
+the important features, I made use of the correlation chart with the help of seaborn package. Systolic 
+bloodpressure and diastolic blood pressure are highly correlated to each other. None of the features 
+were correlated to the label, Prevalent stroke. Therefore I chose the features based on domain 
+knowledge[4], mostly focusing on medical records and unhealthy habits( that is considering Blood 
+pressure, BMI, Cigs Per Day and glucose level).
+
