@@ -22,7 +22,9 @@ and float numbers):
 • BMI: Body Mass Index   
 • Heart Rate: heart rate   
 • Glucose: glucose level  
-The label : prevalent hypertension or not (0 or 1). It is a nominal variable(binary)  
+#### The label :  
+prevalent hypertension or not (0 or 1). It is a nominal variable(binary)    
+
 Behavioural aspects like the number of cigarettes smoked significantly contributes to our objective or 
 label, as smoking is one main cause of hypertension. Majority of the patients are from age group 35-
 55 that is about 67%, and 31% above 55, whereas only 2% below 35. Factors like unhealthy eating habits will be reflected on the medical records mainly – cholesterol, 
