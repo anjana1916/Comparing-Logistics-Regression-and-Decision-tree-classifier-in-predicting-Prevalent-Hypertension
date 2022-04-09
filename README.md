@@ -67,4 +67,12 @@ according to their labels more accurately.
 We use Gini entropy as the loss function, as it allows to measure the variance across the different 
 classes. Here again we use the same split as the previous model for the same reason. In addition to 
 that I have used GridSearchCV to tune the hyperparameters. So that it gives a combination of 
-hyperparameters for which the model performs the best.
+hyperparameters for which the model performs the best.  
+
+### Results and Conclusion
+Both models perform quite well when we take a look at the accuracies and errors. The training 
+accuracies differ by 0.001 but the validation accuracies are the same.  
+![deci](https://user-images.githubusercontent.com/103304121/162564214-227b2bcb-3d1b-462a-9ce6-032da5c99f44.png)
+![logist](https://user-images.githubusercontent.com/103304121/162564215-667918e1-2e27-462e-bbb1-e24fa87dd678.png)
+
+
