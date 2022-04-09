@@ -1,3 +1,4 @@
+![dow](https://user-images.githubusercontent.com/103304121/162563561-ecccbff7-b536-4a54-a184-2d83fb565153.png)
 # **Comparing Logistic Regression and Decision tree classifier in Predicting Prevalent Hypertension**
 ### Introduction
 Hypertension is associated with high blood pressure. Generally, as an adult, you are considered to 
